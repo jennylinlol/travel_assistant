@@ -3,3 +3,8 @@ openai
 langgraph
 requests 
 serpapi
+mcp
+fastmcp
+langchain-mcp-adapters
+langchain-openai
+langchain

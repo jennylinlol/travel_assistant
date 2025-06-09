@@ -13,21 +13,19 @@ This project is an AI-powered travel planner that helps users generate personali
 ## Project Structure
 
 ```
-app/travel_assistant/
-│
-├── agents/
-│   ├── agent.py           # Main agent logic for the Streamlit app
-│   ├── agent_react.py     # Minimal demo of LangGraph ReAct agent (see below)
-│   └── tools/             # Tool definitions (weather, flights, hotels)
-│
-├── travel_assistant.py    # Main Streamlit app entry point
-├── requirements.txt       # Python dependencies
-└── __init__.py
+travel_assistant/
+└── src/
+    ├── agents/
+    │   ├── agent.py # Main agent logic for the Streamlit app
+    │   ├── agent_react.py # Minimal demo of LangGraph ReAct agent (see below)
+    │   └── tools/
+    ├── travel_assistant.py    # Main Streamlit app entry point
+    └── __init__.py
 ```
 
 ## Setup & Installation
 
-1. **Clone the repository** and navigate to the `app/travel_assistant` directory.
+1. **Clone the repository** 
 
 2. **Install dependencies** (preferably in a virtual environment):
 
