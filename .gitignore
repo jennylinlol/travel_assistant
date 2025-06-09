@@ -1,0 +1,28 @@
+# Ignore virtual env
+.venv/
+
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# VS Code settings (if using)
+.vscode/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Poetry files
+poetry.lock
+
+# Logs
+*.log
+
+# test folder
+*/test/*
+
+# ignore env file
+.env
+
+# ignore all files in the data folder
+*/data/*
