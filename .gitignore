@@ -15,6 +15,9 @@ Thumbs.db
 # Poetry files
 poetry.lock
 
+# uv files
+uv.lock
+
 # Logs
 *.log
 

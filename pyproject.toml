@@ -1,3 +1,29 @@
+[project]
+name = "travel-assistant"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Jenny Lin", email = "lintianshu2011@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "langchain>=0.3.24",
+    "streamlit>=1.44.1",
+    "mcp>=1.6.0",
+    "openai>=1.76.0",
+    "serpapi>=0.1.5",
+    "fastmcp>=2.3.4",
+    "langchain-mcp-adapters>=0.1.0",
+    "langchain-openai>=0.3.21",
+    "langgraph>=0.4.8",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
 [tool.poetry]
 name = "travel-assistant"
 version = "0.1.0"
@@ -16,8 +42,3 @@ fastmcp = "^2.3.4"
 langchain-mcp-adapters = "^0.1.0"
 langchain-openai = "^0.3.21"
 langgraph = "^0.4.8"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
