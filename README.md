@@ -29,9 +29,43 @@ travel_assistant/
 
 2. **Install dependencies** (preferably in a virtual environment):
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+### Option 1: Using Virtual Environment
+```bash
+# Clone or download the project
+
+# Create virtual environment
+python -m venv .venv
+
+# Activate virtual environment
+# On Windows:
+.venv\Scripts\activate
+# On macOS/Linux:
+source .venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Option 2: Using Poetry 
+```bash
+# Install dependencies with Poetry
+poetry install
+
+# Activate Poetry shell
+poetry shell
+```
+
+### Option 3: Using uv
+```bash
+# Clone the project
+# Install dependencies with uv
+uv sync
+
+# Run the application directly with uv
+uv run streamlit run src/travel_assistant.py
+```
+
+
 
 3. **Set up environment variables**:
 
@@ -44,7 +78,7 @@ travel_assistant/
 4. **Run the Streamlit app**:
 
    ```bash
-   streamlit run travel_assistant.py
+   streamlit run src/travel_assistant.py
    ```
 
 5. **Open your browser** to the provided local URL to use the app.
@@ -62,7 +96,7 @@ It is a **standalone demo script** that shows how to use the [LangGraph ReAct ag
 You can run it directly to see how a minimal agent works:
 
 ```bash
-python agents/agent_react.py
+python src/agents/agent_react.py
 ```
 
 This is useful for learning and experimentation, but is not required for running the main travel assistant app.
